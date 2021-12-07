@@ -1,6 +1,6 @@
 from dates import *
 
-# runtime for countFirstDaySundaysBetween([1, 1, 1901], [12, 31, 2000]) us 0.378s
+# runtime for countFirstDaySundaysBetween([1, 1, 1901], [12, 31, 2000]) is 0.378s
 
 # counts sundays on the first day of the month within the date range
 # countFirstDaySundaysBetween([startMonth, startDay, startYear], [endMonth, endDay, endYear])
@@ -54,4 +54,5 @@ def countFirstDaySundaysBetween(startDate, endDate):
             #get days in month
             daysInMonth = getDaysInMonth(currentSunday[0], currentSunday[2])
 
+    # return count of sundays on first day of month between date range
     return firstDaySundayCount
